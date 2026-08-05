@@ -22,14 +22,19 @@
 <div class="cursor"></div>
 
 <nav>
-    <div class="nav-links">
-        <a href="#order">How to Order</a>
+    <div class="nav-buttons">
+        <a href="#order">Order</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#howto">How to Order</a>
+        <a href="#info">Info</a>
     </div>
 </nav>
+
 
 <header class="hero">
     <h1>Cora's Handmade Beaded Earrings</h1>
 </header>
+
 
 <main>
 
@@ -89,101 +94,125 @@
     <h2>Pink</h2>
 </section>
 
-</main>
-
 
 <section class="collection">
 
-    <h2>Size Reference</h2>
+<h2>Size Reference</h2>
 
-    <div class="size-gallery">
+<div class="size-gallery">
 
-        <img class="quarter" src="photo15.jpeg" alt="Pearls Size Reference">
-        <img src="photo16.jpeg" alt="Pearls">
+<img class="quarter" src="photo15.jpeg" alt="Pearls Size Reference">
+<img src="photo16.jpeg" alt="Pearls">
 
-        <img class="quarter" src="photo17.jpeg" alt="Turquoise Size Reference">
-        <img src="photo18.jpeg" alt="Turquoise">
+<img class="quarter" src="photo17.jpeg" alt="Turquoise Size Reference">
+<img src="photo18.jpeg" alt="Turquoise">
 
-        <img class="quarter" src="photo19.jpeg" alt="Pink Size Reference">
-        <img src="photo20.jpeg" alt="Pink">
+<img class="quarter" src="photo19.jpeg" alt="Pink Size Reference">
+<img src="photo20.jpeg" alt="Pink">
 
-    </div>
+</div>
+
+</section>
+
+</main>
+
+
+<section id="order" class="information">
+
+<h3>Order</h3>
+
+<p>
+Order forms are available in person.
+</p>
 
 </section>
 
 
-<footer id="order">
+<section id="pricing" class="information">
 
-    <h3>How to Order</h3>
+<h3>Pricing</h3>
 
-    <div class="main-text" style="text-align:left;max-width:700px;margin:auto;line-height:1.8;">
+<p>
+<strong>Standard Earrings:</strong> $9
+</p>
 
-        <p>
-            <strong>1.</strong> Fill out an order form.
-        </p>
+<p>
+<strong>Custom Earrings:</strong> $12
+</p>
 
-        <p>
-            <strong>2.</strong> Give the completed form to Cora in person.
-        </p>
+<p>
+A custom pair uses 2 or more different types of gemstones, so there is a +$3 customization fee.
+</p>
 
-        <p>
-            <strong>3.</strong> Your earrings will be handmade and ready by the next day!
-        </p>
-
-        <br>
-
-        <p>
-            <strong>Please note:</strong> If you order on a Friday, your earrings may not be ready until Tuesday.
-        </p>
-
-    </div>
-
-</footer>
+</section>
 
 
-<footer>
+<section id="howto" class="information">
 
-    <h3>Info</h3>
+<h3>How to Order</h3>
 
-    <div class="main-text" style="text-align:left;max-width:700px;margin:auto;line-height:1.8;">
+<p>
+<strong>1.</strong> Fill out an order form.
+</p>
 
-        <p><strong>Includes:</strong><br>
-        Earrings, backings, and a display card, all packaged in a protective bag.</p>
+<p>
+<strong>2.</strong> Give the completed form to Cora in person.
+</p>
 
-        <br>
+<p>
+<strong>3.</strong> Your earrings will be handmade and ready by the next day!
+</p>
 
-        <p><strong>Care Instructions</strong></p>
+<br>
 
-        <ul style="padding-left:22px;">
-            <li>Keep dry.</li>
-            <li>Store in the included bag when not in use.</li>
-            <li>Avoid dropping or pulling on the earrings.</li>
-        </ul>
+<p>
+<strong>Please note:</strong> If you order on a Friday, your earrings may not be ready until Tuesday.
+</p>
 
-        <br>
+</section>
 
-        <p><strong>Please Note</strong></p>
 
-        <ul style="padding-left:22px;">
-            <li>Handmade items may have slight variations.</li>
-            <li>Natural gemstones can vary slightly in color and pattern.</li>
-        </ul>
+<section id="info" class="information">
 
-        <br>
+<h3>Info</h3>
 
-        <p><strong>Perfect for gifting or treating yourself!</strong></p>
+<p>
+<strong>Includes:</strong><br>
+Earrings, backings, and a display card, all packaged in a protective bag.
+</p>
 
-    </div>
+<br>
 
-</footer>
+<p><strong>Care Instructions</strong></p>
+
+<ul>
+<li>Keep dry.</li>
+<li>Store in the included bag when not in use.</li>
+<li>Avoid dropping or pulling on the earrings.</li>
+</ul>
+
+<br>
+
+<p><strong>Please Note</strong></p>
+
+<ul>
+<li>Handmade items may have slight variations.</li>
+<li>Natural gemstones can vary slightly in color and pattern.</li>
+</ul>
+
+<br>
+
+<p><strong>Perfect for gifting or treating yourself!</strong></p>
+
+</section>
 
 
 <script>
 const cursor = document.querySelector(".cursor");
 
-document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
+document.addEventListener("mousemove", (e)=>{
+    cursor.style.left=e.clientX+"px";
+    cursor.style.top=e.clientY+"px";
 });
 </script>
 
