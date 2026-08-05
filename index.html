@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cora Beads</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="cursor"></div>
+
+<header class="hero">
+    <h1>Cora</h1>
+    <p>Handmade Beaded Earrings</p>
+</header>
+
+<main>
+
+<section class="collection">
+    <div class="photos">
+        <img src="photo1.jpg" alt="Pearl Earrings">
+        <img src="photo2.jpg" alt="Pearl Earrings">
+    </div>
+    <h2>Pearls</h2>
+</section>
+
+<section class="collection">
+    <div class="photos">
+        <img src="photo3.jpg" alt="Turquoise Earrings">
+        <img src="photo4.jpg" alt="Turquoise Earrings">
+    </div>
+    <h2>Turquoise</h2>
+</section>
+
+<section class="collection">
+    <div class="photos">
+        <img src="photo5.jpg" alt="Aqua Earrings">
+        <img src="photo6.jpg" alt="Aqua Earrings">
+    </div>
+    <h2>Aqua</h2>
+</section>
+
+<section class="collection">
+    <div class="photos">
+        <img src="photo7.jpg" alt="Blue Glass Earrings">
+        <img src="photo8.jpg" alt="Blue Glass Earrings">
+    </div>
+    <h2>Blue Glass</h2>
+</section>
+
+<section class="collection">
+    <div class="photos">
+        <img src="photo9.jpg" alt="Black Earrings">
+        <img src="photo10.jpg" alt="Black Earrings">
+    </div>
+    <h2>Black</h2>
+</section>
+
+<section class="collection">
+    <div class="photos">
+        <img src="photo11.jpg" alt="Clear Glass Earrings">
+        <img src="photo12.jpg" alt="Clear Glass Earrings">
+    </div>
+    <h2>Clear Glass</h2>
+</section>
+
+<section class="collection">
+    <div class="photos">
+        <img src="photo13.jpg" alt="Pink Earrings">
+        <img src="photo14.jpg" alt="Pink Earrings">
+    </div>
+    <h2>Pink</h2>
+</section>
+
+</main>
+
+<footer>
+    <h3>How to Order</h3>
+    <p class="main-text">
+        Complete a paper order form and hand it in in person. Your earrings will be ready the next day!*
+    </p>
+
+    <p class="small">
+        *Orders placed on Friday may be ready on Tuesday instead.
+    </p>
+</footer>
+
+<script>
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", e=>{
+    cursor.style.left=e.clientX+"px";
+    cursor.style.top=e.clientY+"px";
+});
+</script>
+
+</body>
+</html>
