@@ -3,19 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cora Beads</title>
+<title>Cora's Handmade Beaded Earrings</title>
+
 <link rel="stylesheet" href="style.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <div class="cursor"></div>
 
+<nav>
+    <div class="nav-links">
+        <a href="#order">How to Order</a>
+    </div>
+</nav>
+
 <header class="hero">
-    <h1>Cora</h1>
-    <p>Handmade Beaded Earrings</p>
+    <h1>Cora's Handmade Beaded Earrings</h1>
 </header>
 
 <main>
@@ -78,23 +87,27 @@
 
 </main>
 
-<footer>
+<footer id="order">
+
     <h3>How to Order</h3>
+
     <p class="main-text">
-        Complete a paper order form and hand it in in person. Your earrings will be ready the next day!*
+        Fill out a paper order form and hand it in in person to Cora.
+        Your earrings will be ready the next day!*
     </p>
 
     <p class="small">
-        *Orders placed on Friday may be ready on Tuesday instead.
+        *If ordered on Friday there is a chance of delivery on that Tuesday.
     </p>
+
 </footer>
 
 <script>
 const cursor = document.querySelector(".cursor");
 
-document.addEventListener("mousemove", e=>{
-    cursor.style.left=e.clientX+"px";
-    cursor.style.top=e.clientY+"px";
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
 });
 </script>
 
