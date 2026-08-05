@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#222;
+    cursor:none;
+    overflow-x:hidden;
+}
+
+/* Custom Cursor */
+
+.cursor{
+    width:16px;
+    height:16px;
+    border:2px solid #6bc8d8;
+    background:rgba(107,200,216,.2);
+    border-radius:50%;
+    position:fixed;
+    pointer-events:none;
+    transform:translate(-50%,-50%);
+    z-index:9999;
+    transition:transform .08s linear;
+}
+
+a,img,button{
+    cursor:none;
+}
+
+/* Header */
+
+.hero{
+    text-align:center;
+    padding:70px 20px 50px;
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.hero p{
+    margin-top:8px;
+    color:#777;
+    font-size:1rem;
+}
+
+/* Sections */
+
+.collection{
+    width:min(1100px,92%);
+    margin:0 auto 60px;
+    background:#fafafa;
+    border-radius:22px;
+    padding:22px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    transition:.35s;
+}
+
+.collection:hover{
+    transform:translateY(-4px);
+}
+
+.photos{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.photos img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:18px;
+    transition:.35s;
+}
+
+.photos img:hover{
+    transform:scale(1.03);
+}
+
+.collection h2{
+    text-align:center;
+    margin-top:20px;
+    font-size:1.3rem;
+    font-weight:600;
+    color:#444;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:70px 20px;
+}
+
+footer h3{
+    font-size:2rem;
+    margin-bottom:18px;
+}
+
+.main-text{
+    max-width:650px;
+    margin:auto;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.small{
+    margin-top:12px;
+    color:#777;
+    font-size:.82rem;
+}
+
+/* Mobile */
+
+@media(max-width:700px){
+
+.hero{
+    padding:55px 18px 35px;
+}
+
+.hero h1{
+    font-size:2.4rem;
+}
+
+.collection{
+    padding:16px;
+    margin-bottom:40px;
+    border-radius:18px;
+}
+
+.photos{
+    gap:10px;
+}
+
+.collection h2{
+    font-size:1.1rem;
+}
+
+footer{
+    padding:55px 20px;
+}
+
+.main-text{
+    font-size:1rem;
+}
+
+.cursor{
+    display:none;
+}
+
+body{
+    cursor:auto;
+}
+
+a,img,button{
+    cursor:auto;
+}
+
+}
