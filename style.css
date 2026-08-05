@@ -1,170 +1,181 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-html{
-    scroll-behavior:smooth;
-}
+<title>Cora's Handmade Beaded Earrings</title>
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#ffffff;
-    color:#222;
-    cursor:none;
-    overflow-x:hidden;
-}
+<link rel="icon" type="image/png" href="icon.png">
 
-/* Custom Cursor */
+<link rel="stylesheet" href="style.css">
 
-.cursor{
-    width:16px;
-    height:16px;
-    border:2px solid #6bc8d8;
-    background:rgba(107,200,216,.2);
-    border-radius:50%;
-    position:fixed;
-    pointer-events:none;
-    transform:translate(-50%,-50%);
-    z-index:9999;
-    transition:transform .08s linear;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-a,img,button{
-    cursor:none;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-/* Header */
+</head>
 
-.hero{
-    text-align:center;
-    padding:70px 20px 50px;
-}
+<body>
 
-.hero h1{
-    font-size:3rem;
-    font-weight:700;
-    letter-spacing:2px;
-}
+<div class="cursor"></div>
 
-.hero p{
-    margin-top:8px;
-    color:#777;
-    font-size:1rem;
-}
+<nav>
+    <div class="nav-links">
+        <a href="#order">How to Order</a>
+    </div>
+</nav>
 
-/* Sections */
+<header class="hero">
+    <h1>Cora's Handmade Beaded Earrings</h1>
+</header>
 
-.collection{
-    width:min(1100px,92%);
-    margin:0 auto 60px;
-    background:#fafafa;
-    border-radius:22px;
-    padding:22px;
-    box-shadow:0 10px 30px rgba(0,0,0,.06);
-    transition:.35s;
-}
+<main>
 
-.collection:hover{
-    transform:translateY(-4px);
-}
+<section class="collection">
+    <div class="photos">
+        <img src="photo1.jpeg" alt="Pearl Earrings">
+        <img src="photo2.jpeg" alt="Pearl Earrings">
+    </div>
+    <h2>Pearls</h2>
+</section>
 
-.photos{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px;
-}
+<section class="collection">
+    <div class="photos">
+        <img src="photo3.jpeg" alt="Turquoise Earrings">
+        <img src="photo4.jpeg" alt="Turquoise Earrings">
+    </div>
+    <h2>Turquoise</h2>
+</section>
 
-.photos img{
-    width:100%;
-    aspect-ratio:1/1;
-    object-fit:cover;
-    border-radius:18px;
-    transition:.35s;
-}
+<section class="collection">
+    <div class="photos">
+        <img src="photo5.jpeg" alt="Aqua Earrings">
+        <img src="photo6.jpeg" alt="Aqua Earrings">
+    </div>
+    <h2>Aqua</h2>
+</section>
 
-.photos img:hover{
-    transform:scale(1.03);
-}
+<section class="collection">
+    <div class="photos">
+        <img src="photo7.jpeg" alt="Blue Glass Earrings">
+        <img src="photo8.jpeg" alt="Blue Glass Earrings">
+    </div>
+    <h2>Blue Glass</h2>
+</section>
 
-.collection h2{
-    text-align:center;
-    margin-top:20px;
-    font-size:1.3rem;
-    font-weight:600;
-    color:#444;
-}
+<section class="collection">
+    <div class="photos">
+        <img src="photo9.jpeg" alt="Black Earrings">
+        <img src="photo10.jpeg" alt="Black Earrings">
+    </div>
+    <h2>Black</h2>
+</section>
 
-/* Footer */
+<section class="collection">
+    <div class="photos">
+        <img src="photo11.jpeg" alt="Clear Glass Earrings">
+        <img src="photo12.jpeg" alt="Clear Glass Earrings">
+    </div>
+    <h2>Clear Glass</h2>
+</section>
 
-footer{
-    text-align:center;
-    padding:70px 20px;
-}
+<section class="collection">
+    <div class="photos">
+        <img src="photo13.jpeg" alt="Pink Earrings">
+        <img src="photo14.jpeg" alt="Pink Earrings">
+    </div>
+    <h2>Pink</h2>
+</section>
 
-footer h3{
-    font-size:2rem;
-    margin-bottom:18px;
-}
+</main>
 
-.main-text{
-    max-width:650px;
-    margin:auto;
-    font-size:1.1rem;
-    line-height:1.8;
-}
 
-.small{
-    margin-top:12px;
-    color:#777;
-    font-size:.82rem;
-}
+<!-- Size Reference Photos -->
+<section class="collection">
 
-/* Mobile */
+    <h2>Size Reference</h2>
 
-@media(max-width:700px){
+    <div class="size-gallery">
 
-.hero{
-    padding:55px 18px 35px;
-}
+        <img class="quarter" src="photo15.jpeg" alt="Pearls Size Reference">
+        <img src="photo16.jpeg" alt="Pearls">
 
-.hero h1{
-    font-size:2.4rem;
-}
+        <img class="quarter" src="photo17.jpeg" alt="Turquoise Size Reference">
+        <img src="photo18.jpeg" alt="Turquoise">
 
-.collection{
-    padding:16px;
-    margin-bottom:40px;
-    border-radius:18px;
-}
+        <img class="quarter" src="photo19.jpeg" alt="Pink Size Reference">
+        <img src="photo20.jpeg" alt="Pink">
 
-.photos{
-    gap:10px;
-}
+    </div>
 
-.collection h2{
-    font-size:1.1rem;
-}
+</section>
 
-footer{
-    padding:55px 20px;
-}
 
-.main-text{
-    font-size:1rem;
-}
+<footer id="order">
 
-.cursor{
-    display:none;
-}
+    <h3>How to Order</h3>
 
-body{
-    cursor:auto;
-}
+    <p class="main-text">
+        Fill out a paper order form and hand it in in person to Cora.
+    </p>
 
-a,img,button{
-    cursor:auto;
-}
+    <p class="small">
+        *If ordered on Friday there is a chance of delivery on that Tuesday.
+    </p>
 
-}
+
+    <br><br>
+
+
+    <h3>Info</h3>
+
+    <div class="main-text" style="text-align:left;max-width:700px;margin:auto;line-height:1.8;">
+
+        <p><strong>Orders are typically ready the next day.</strong></p>
+
+        <br>
+
+        <p><strong>Includes:</strong><br>
+        Earrings, backings, and a display card, all packaged in a protective bag.</p>
+
+        <br>
+
+        <p><strong>Care Instructions</strong></p>
+
+        <ul style="padding-left:22px;">
+            <li>Keep dry.</li>
+            <li>Store in the included bag when not in use.</li>
+            <li>Avoid dropping or pulling on the earrings.</li>
+        </ul>
+
+        <br>
+
+        <p><strong>Please Note</strong></p>
+
+        <ul style="padding-left:22px;">
+            <li>Handmade items may have slight variations.</li>
+            <li>Natural gemstones can vary slightly in color and pattern.</li>
+        </ul>
+
+        <br>
+
+        <p><strong>Perfect for gifting or treating yourself!</strong></p>
+
+    </div>
+
+</footer>
+
+
+<script>
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+});
+</script>
+
+</body>
+</html>
