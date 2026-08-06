@@ -82,11 +82,11 @@ nav{
 /* Earrings Sections */
 
 .collection{
-    width:min(1300px,94%);
+    width:min(1400px,95%);
     margin:0 auto 55px;
     background:#fafafa;
     border-radius:22px;
-    padding:25px;
+    padding:28px;
     box-shadow:0 10px 30px rgba(0,0,0,.06);
     transition:.3s;
 }
@@ -96,17 +96,17 @@ nav{
 }
 
 
-/* Vertical Product Photos */
+/* Large vertical earring photos */
 
 .photos{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:20px;
+    gap:24px;
 }
 
 .photos img{
     width:100%;
-    aspect-ratio:3/4;
+    aspect-ratio:2/3;
     object-fit:cover;
     border-radius:18px;
     transition:.3s;
@@ -118,39 +118,42 @@ nav{
 
 .collection h2{
     text-align:center;
-    margin-top:20px;
-    font-size:1.35rem;
+    margin-top:22px;
+    font-size:1.4rem;
     font-weight:600;
     color:#444;
 }
 
 
-/* Size Reference */
+/* Example Pictures */
 
 .size-gallery{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:12px;
+    gap:18px;
     overflow-x:auto;
-    padding:15px 0 5px;
+    padding:20px 0;
 }
 
 .size-gallery img{
-    width:70px;
-    height:70px;
+    width:95px;
+    height:150px;
     object-fit:cover;
-    border-radius:12px;
+    border-radius:14px;
     box-shadow:0 4px 12px rgba(0,0,0,.08);
     flex-shrink:0;
 }
+
+
+/* Quarter photos */
 
 .size-gallery .quarter{
     transform:rotate(90deg);
 }
 
 
-/* Info / Order / Pricing Sections */
+/* Information Sections */
 
 .information{
     width:min(800px,92%);
@@ -223,7 +226,7 @@ nav{
     }
 
     .photos img{
-        aspect-ratio:3/4;
+        aspect-ratio:2/3;
         border-radius:14px;
     }
 
@@ -234,12 +237,12 @@ nav{
 
 
     .size-gallery{
-        gap:8px;
+        gap:10px;
     }
 
     .size-gallery img{
-        width:55px;
-        height:55px;
+        width:60px;
+        height:100px;
     }
 
 
