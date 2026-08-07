@@ -16,8 +16,9 @@ body{
     overflow-x:hidden;
 }
 
-
-/* Custom Cursor */
+/* ==========================
+   Custom Cursor
+========================== */
 
 .cursor{
     width:16px;
@@ -31,8 +32,9 @@ body{
     z-index:9999;
 }
 
-
-/* Navigation */
+/* ==========================
+   Navigation
+========================== */
 
 nav{
     width:100%;
@@ -64,8 +66,9 @@ nav{
     transform:translateY(-2px);
 }
 
-
-/* Header */
+/* ==========================
+   Header
+========================== */
 
 .hero{
     text-align:center;
@@ -78,15 +81,16 @@ nav{
     letter-spacing:1px;
 }
 
-
-/* Earrings Sections */
+/* ==========================
+   Product Sections
+========================== */
 
 .collection{
-    width:min(1400px,95%);
+    width:min(1500px,96%);
     margin:0 auto 55px;
     background:#fafafa;
     border-radius:22px;
-    padding:28px;
+    padding:30px;
     box-shadow:0 10px 30px rgba(0,0,0,.06);
     transition:.3s;
 }
@@ -95,21 +99,21 @@ nav{
     transform:translateY(-3px);
 }
 
-
-/* Large vertical earring photos */
-
 .photos{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:24px;
+    grid-template-columns:repeat(2,minmax(320px,1fr));
+    justify-content:center;
+    gap:28px;
 }
 
 .photos img{
     width:100%;
     aspect-ratio:2/3;
     object-fit:cover;
+    object-position:center;
     border-radius:18px;
     transition:.3s;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
 
 .photos img:hover{
@@ -124,8 +128,9 @@ nav{
     color:#444;
 }
 
-
-/* Example Pictures */
+/* ==========================
+   Example Pictures
+========================== */
 
 .size-gallery{
     display:flex;
@@ -137,23 +142,23 @@ nav{
 }
 
 .size-gallery img{
-    width:95px;
-    height:150px;
+    width:90px;
+    height:160px;
     object-fit:cover;
+    object-position:center;
     border-radius:14px;
     box-shadow:0 4px 12px rgba(0,0,0,.08);
     flex-shrink:0;
 }
 
-
-/* Quarter photos */
-
+/* Keep all six images vertical */
 .size-gallery .quarter{
-    transform:rotate(90deg);
+    transform:none;
 }
 
-
-/* Information Sections */
+/* ==========================
+   Information Sections
+========================== */
 
 .information{
     width:min(800px,92%);
@@ -179,10 +184,11 @@ nav{
     padding-left:25px;
 }
 
+/* ==========================
+   Mobile
+========================== */
 
-/* Mobile */
-
-@media(max-width:700px){
+@media(max-width:900px){
 
     body{
         cursor:auto;
@@ -191,7 +197,6 @@ nav{
     .cursor{
         display:none;
     }
-
 
     .nav-buttons{
         width:100%;
@@ -202,7 +207,6 @@ nav{
         text-align:center;
     }
 
-
     .hero{
         padding:40px 15px 30px;
     }
@@ -211,43 +215,37 @@ nav{
         font-size:2rem;
     }
 
-
     .collection{
-        width:94%;
-        padding:15px;
+        width:95%;
+        padding:18px;
         border-radius:18px;
         margin-bottom:35px;
     }
 
-
     .photos{
-        grid-template-columns:repeat(2,1fr);
-        gap:12px;
+        grid-template-columns:1fr;
+        gap:20px;
     }
 
     .photos img{
         aspect-ratio:2/3;
-        border-radius:14px;
     }
-
 
     .collection h2{
-        font-size:1.1rem;
+        font-size:1.15rem;
     }
-
 
     .size-gallery{
         gap:10px;
     }
 
     .size-gallery img{
-        width:60px;
-        height:100px;
+        width:70px;
+        height:125px;
     }
 
-
     .information{
-        width:94%;
+        width:95%;
         padding:22px;
         border-radius:18px;
     }
